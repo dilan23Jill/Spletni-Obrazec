@@ -1,0 +1,346 @@
+html {
+	font-family: 'Raleway';
+	background: url('../images/background.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+}
+
+body {
+	position:relative;
+	margin:auto;
+	width: 60em;
+    height: 65em;
+	background-color: #a5b0e0;
+	border: solid #ec2329	;
+	border-width: 0.2em;
+	border-radius: 1.5em;
+	padding-top: 0.6em;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-bottom: 0.6em;
+	opacity: 0.95;
+}
+
+
+input, select, textarea, canvas, button{
+	position: relative;
+	top: -0.1em;
+	border: 0.15em #f5930e;
+	border-radius: 0.5em;	
+	height: 1.5em;
+	width: 15em;
+	font-family: "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap";
+}
+.p-osnova{
+	display:inline-block;
+	font-weight: 600;
+}
+.div1_naslovnica{
+	font-style: oblique;
+	display: inline-block;
+	width: 60em;
+	height: 4em;
+}
+.podpis_triglav {
+  	font-size: 0.8em;
+	margin:0;
+}
+.triglav_logo {
+	position: relative;
+	float:right;	
+	top:-3em;
+	height: 3.5em;
+	width:auto;	
+}
+
+.div2_naslov{
+	padding-bottom: 1em;
+	display: inline-block;
+	width: 60em;
+	height: 6.5em;
+}
+.line1, .line2 {
+	border: 0.05em solid black;
+	width: 60em;	
+	margin-left: auto;
+	background-color: black;
+}
+#npr_kraj{
+	position: relative;
+	top: 3em;
+}
+.naslov1 {
+	position: relative;
+	float: right; 
+	margin: 0 0 0.3em;
+	font-size: 30px;
+}
+.obmocna_enota{
+	position: relative;
+	top: 2.6em;
+}
+
+.div3_zgornjidel{
+	width: 60em;
+	height: 6.5em;
+}
+ .podtext_izpolni_zav{
+	position: relative;
+	font-size:13px;
+	margin-top:0.1em;
+	left:14.5em;	
+}
+
+.div4_vsebina{
+	display: inline-block;
+	width: 60em;
+	height: 7em;
+}
+.datumrojstva{
+	display:inline-block;
+	box-sizing: border-box;
+}
+span.datum_rojstva{
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+span select{
+	display: inline;
+	font-family: inherit;
+	border-radius: 8px;
+	width: 3em;
+	font-weight: 600;
+}
+.datum_rojstva{
+	font-weight: 600;
+}
+#day, #month, #year{
+	height: 2em;
+}
+#year{
+	width: 4.5em;
+}
+#month{
+	width: 7.5em;
+}
+#day{
+	width: 3.5em;
+}
+.minitext_kraj{
+	font-size:0.7em;
+}
+#krajbivanja{
+	width:20em;
+}
+.polje2{
+	margin:0;
+}
+
+#e{
+	width:0.7em;
+}
+.podtext_tel_st{
+	position: relative;
+	left:64em;
+	top:-0.8em;
+	font-size:0.7em;
+	margin:0;
+}
+
+.polje1{
+	margin-top: 0;
+}
+
+#tel_st{
+	width: 14em;
+	border-radius: 8px;
+	margin-top: 0;
+	padding-top: 0;
+	height: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	
+}
+
+#opisdogodka{
+	resize: none;
+	border-radius: 10px;
+	width: 290px;
+	height: 300px;
+	overflow: auto;
+	outline:none;
+}
+.skica{
+	text-indent: 11.2em;
+	padding-bottom: 0.5em;
+}
+#sig-canvas {
+	cursor: crosshair;
+	background-color: white;
+	height: 19em;
+	width: 40.5em;
+	
+  }
+  #sig-clearBtn{
+	transform: translate(800%);
+	width: 5.5em;
+	height: 2em;
+	font-weight:700;
+  }
+.oznacitve1, .oznacitve2, .oznacitve3{
+	width: 19em;
+	display: inline-block;
+}
+.oznacitve1 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 10px;
+	margin: 0.4em 1.5em 0  ;
+    font-family: inherit;
+    font-size: 16px;
+	font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+.oznacitve1 input[type="radio"]:checked + label {
+    background-color:#ec2329;
+}
+
+.oznacitve1 label:hover {
+	background-color: #C9DFEC;
+  }
+
+.oznacitve1 input[type="radio"] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+  }
+
+.oznacitve2 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 10px;
+	margin: 0.4em 1.5em 0  ;
+    font-family: inherit;
+    font-size: 16px;
+	font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+.oznacitve2 input[type="radio"]:checked + label {
+    background-color:#ec2329;
+}
+
+.oznacitve2 label:hover {
+	background-color: #C9DFEC;
+  }
+
+.oznacitve2 input[type="radio"] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+  }
+  .oznacitve1{
+	top:0.5em;
+  }
+  .oznacitve3{
+	  position: relative;
+	  left:6.2em;
+	  top:0.5em;
+  }
+.oznacitve2{
+	position: relative;
+	right: -3em;
+	top:0.5em;
+
+}
+  .oznacitve3 label {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 10px;
+	margin: 0.4em 1.5em 0  ;
+    font-family: inherit;
+    font-size: 16px;
+	font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+.oznacitve3 input[type="radio"]:checked + label {
+    background-color:#ec2329;
+}
+
+.oznacitve3 label:hover {
+	background-color: #C9DFEC;
+  }
+
+.oznacitve3 input[type="radio"] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+  }
+
+  .submitclass{
+	text-align: center;
+	margin-top: 4.5em;
+}
+.enaslov{
+	margin-bottom:2em;
+}
+  #submit_button{
+	height: 2em;
+	font-weight: 700;
+	text-align: center;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=text]:hover{
+ background: #C9DFEC;
+}
+input[type=select]:hover{
+	background: #C9DFEC;
+}
+ input[type=number]:hover{
+ background: #C9DFEC;
+}
+ input[type=text]:hover{
+	background: #C9DFEC;
+}
+input[type=textarea]:hover{
+	background: #C9DFEC;
+}
+input[type=tel]:hover{
+	background: #C9DFEC;
+}
+input[type=canvas]:hover{
+	background: #C9DFEC;
+}
+input[type=button]:hover{
+	background: #C9DFEC;
+}
+input[type=submit]:hover{
+	background: #C9DFEC;
+}
+input[type=email]:hover{
+	background: #C9DFEC;
+}
+input:required:hover {
+	opacity: 1;
+  }
+  input:required:focus {
+	outline: none;
+  }
+  input:required {
+	box-shadow: 4px 4px 20px rgba(31, 131, 212, 0.85);
+  }
+  
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpg" href="images/favicon.jpg">	
+<title>OBRAZEC</title>
+</head>
+	
+<body>
+
+	<form method="get" id="fullForm">
+
+	<div class="div1_naslovnica">
+
+		<b class="zav_triglav">ZAVAROVALNICA TRIGLAV, d.d</b>
+		<p class="podpis_triglav">MIKLOČIŠEVA CESTA 19, LJUBLJANA<br/>ID št. za DDV SI12345456789</p>
+        <img src="images/triglav_logo.png" class="triglav_logo" alt="Triglav logo">
+		
+	</div>
+	
+		
+		
+	<div class="div2_naslov">	
+
+		<hr class="line1">
+		<h1 class="naslov1">Prijava škodnega primera iz <br/>zavarovanja avtomobilskega kaska</h1>		
+		<label class="obmocna_enota p-osnova" for="npr_kraj">OBMOČNA ENOTA:</label>	
+		<input type="text" id="npr_kraj" oninvalid="this.setCustomValidity('Napačna območna enota ali pa vsebuje števila')" oninput="this.setCustomValidity('')"
+		placeholder="npr. Nova Gorica" maxlength="20" pattern="[A-Za-z]+" required/>	
+		<hr class="line2">
+
+	</div>
+
+	<div class="div3_zgornjidel">
+
+		<label class="stevilka_skodnega_spisa p-osnova"for="izpolni_zav">Številka škodnega spisa:</label>
+		<input type="number" min="100" max="99999999999" id="izpolni_zav" required oninvalid="this.setCustomValidity('Napacna številka škodnega spisa')" oninput="this.setCustomValidity('')"></br>	
+		<p class="podtext_izpolni_zav">(izpolni zavarovalnica)</p>		
+		<h2 class="h2">&emsp; Podatki o zavarovancu in zavarovanem vozilu:</h2>
+
+	</div>	
+
+<div class="div4_vsebina">	
+
+		<label class="imepriimek p-osnova" for="ime_priimek">Ime in priimek:&nbsp;</label>
+		<input type="text" id="ime_priimek" maxlength="30" required oninvalid="this.setCustomValidity('Ime nesme vsebovati posebnih znakov ali števil')" oninput="this.setCustomValidity('')"/>
+
+		<div class="datum_rojstva">
+		<p class="datumrojstva">Datum rojstva:</p>
+		<span>
+            <label for="day">Dan:</label>
+            <select name="day" id="day"></select>
+			
+        </span>
+        <span>
+            <label for="month">Mesec:</label>
+            <select name="month" id="month">
+			</select>
+        </span>
+        <span>
+            <label for="year">Leto:</label>
+            <select name="year" id="year">Year:</select>
+		</span>	<br/>
+		<script src="js/script_src3.js"></script>
+
+		</div>
+<div class="div5_vsebina2">
+		<label class="kraj_bivanja p-osnova" for="krajbivanja">Naslov
+		<p class="minitext_kraj p-osnova">(ulica,hišna številka,kraj)</p>:&nbsp;</label>
+		<input type="text" maxlength="40" id="krajbivanja" required><br/>
+		
+		</div>
+<div class="polje1">
+
+		<label class="enaslov p-osnova" for="email">E-naslov:</label>
+		<input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required>
+	
+		<label class="dav_st p-osnova" for="e">,davčna številka:SI</label>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required> 
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+		<input type="text" id="e"   maxlength="1" onkeypress="isInputNumber(event)" required>
+			
+		<script src="js/script_src1.js"></script>
+		<script src="js/script_src2.js"></script>
+			
+		<label class="telst p-osnova" for="tel_st">,tel.številka:</label>	
+		<input type="text" maxlength="11" id="tel_st" onkeyup="format(this)" pattern="^\d{3}-\d{3}-\d{3}$" required>
+		<p class="podtext_tel_st p-osnova">(Oblika:123-456-789)</p><br/>
+		</div>
+		<script src="js/telefonska.js"></script>
+
+		
+<div class="polje2">
+			
+	<label class="opis p-osnova">OPIS DOGODKA:</label>
+	<label class="skica p-osnova">SKICA DOGODKA:</label><br/>	
+	<textarea name="opis_dogodka" id="opisdogodka" rows="1" required></textarea>			
+	<canvas id="sig-canvas" width="648" height="304" checked ></canvas><br/>
+	<input type="button" id="sig-clearBtn" value="POČISTI">
+	</div>
+		 <script src="js/canvas.js"></script>
+		
+<div class="oznake">
+
+	
+	
+	<div class="oznacitve1">
+		<p class="alkotest p-osnova">Ali je bil opravljen alkotest?</p><br/>
+		<input type="radio" id="da"
+		 name="alkotest" required>
+		<label for="da">DA</label>
+	
+		<input type="radio" id="ne"
+		 name="alkotest" required >
+		<label for="ne">NE</label>
+
+	  </div>
+
+	  
+
+	<div class="oznacitve2">
+		<p class="alkotest p-osnova">Ali je voznik mladi voznik?</p><br/>
+		<input type="radio" id="od1"
+		 name="odklonil" required>
+		<label for="od1">DA</label>
+	
+		<input type="radio" id="od2"
+		 name="odklonil" required>
+		<label for="od2">NE</label>
+
+	  </div>
+
+	  <div class="oznacitve3">
+		<p class="alkotest p-osnova">Ali je voznik pod vplivom mamil?</p><br/>
+		<input type="radio" id="dr1"
+		 name="mamila" required>
+		<label for="dr1">DA</label>
+	
+		<input type="radio" id="dr2"
+		 name="mamila" required>
+		<label for="dr2">NE</label>
+
+	  </div>
+	  
+		
+	  </div>
+	  <div class="submitclass">
+ <input type="submit" id="submit_button" value="POSLJI">
+ </div>
+
+
+	</form>
+	<script>
+  var submit_button = document.getElementById("submit_button");
+
+fullForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    Swal.fire({
+        toast: true,
+        icon: 'success',
+        title: 'Obrazec je oddan',
+        showConfirmButton: false,
+        timer: 2500,
+        position: 'top',
+        timerProgressBar: true,
+    }).then((result) => {
+        document.getElementById('fullForm').submit();
+    });
+});
+</script>
+<script src="js/javascript2.js"></script>
+
+	</body>
+
+		
+			</html>
